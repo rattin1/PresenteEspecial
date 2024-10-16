@@ -1,0 +1,141 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    background-color: #fa8fc3;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 600px;
+    width: 600px;
+
+    background-color: #fff;
+    border-radius: 64px;
+    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card > .question p {
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.btn-bom, .btn-mom, .btn-ruim, .btn-nqfd {
+    height: 48px;
+    width: 100px;
+
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-nqfd {
+    height: 48px;
+    width: 100px;
+
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.btn-bom {
+    background-color: #19c8ce;
+    color: #fff
+}
+
+.btn-mom {
+    background-color: #eccd1f;
+    color: #fff
+}
+
+.btn-ruim {
+    background-color: #ec1f1f;
+    color: #fff
+}
+
+.btn-nqfd {
+    background-color: #ec1f9d;
+    color: #fff
+}
+
+/* ========================================= */
+.answer1 {
+    display: none;
+}
+
+.answer1 > p {
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #052c5c;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    
+
+}
+
+/* ========================================= */
+.answer2 {
+    display: none;
+}
+
+.answer2 > p {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #977716;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+/* ========================================= */
+.answer3 {
+    display: none;
+}
+
+.answer3 > p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #300404;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+.answer1, .answer2, .answer3 {
+    display: none; /* Oculta as respostas inicialmente */
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Centraliza os itens na coluna */
+}
+
+#imagemDog, #imagemBom {
+    display: block; /* Faz as imagens se comportarem como blocos */
+    margin: 2px auto; /* Centraliza as imagens e adiciona margem vertical */
+  }
